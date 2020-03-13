@@ -1,0 +1,3 @@
+[submodule "src/syft"]
+	path = src/syft
+	url = https://github.com/OpenMined/PySyft.git
