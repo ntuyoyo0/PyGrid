@@ -20,6 +20,8 @@ hook.local_worker.is_client_worker = False
 html = Blueprint(r"html", __name__)
 ws = Blueprint(r"ws", __name__)
 
+## added by bobsonlin
+local_worker.add_worker(hook.local_worker)
 
 from . import routes, events
 from . import auth
