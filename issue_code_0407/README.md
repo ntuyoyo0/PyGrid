@@ -36,5 +36,8 @@ $ python run_async_privategrid_client.py
 ```
 ## What I found
 It would be work if I using WebsocketClientWorker. Also, It works if I ran worker.fit() using NodeClient.
+Based on the error messages in the server side, you'll find that server cannot find the obj with "0" key.
+The obj with "0" key is the loss value returned by fit() in federated_client.py
 I found that it wouldn't run fit() in federated_client.py when i ran worker.async_fit()
-I donn't know how to fix it
+
+I don't know how to fix it :(
