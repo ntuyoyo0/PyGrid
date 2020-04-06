@@ -7,8 +7,8 @@ $ cd test_async/
 $ git clone https://github.com/ntuyoyo0/PyGrid.git
 $ cd PyGrid/
 $ git checkout yoyo0-dev
-(choose 'wipe' option)
 $ pip install -r requirements.txt
+(choose 'wipe' option)
 ```
 
 ```
@@ -34,3 +34,7 @@ $ python ../app/websocket/websocket_app2.py --host 0.0.0.0 --port 6668 --id char
 $ python ../app/websocket/websocket_app2.py --host 0.0.0.0 --port 6669 --id testing --notebook mnist-parallel
 $ python run_async_privategrid_client.py
 ```
+## What I found
+It would be work if I using WebsocketClientWorker. Also, It works if I ran worker.fit() using NodeClient.
+I found that it wouldn't run fit() in federated_client.py when i ran worker.async_fit()
+I donn't know how to fix it
