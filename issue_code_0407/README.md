@@ -13,9 +13,9 @@ $ pip install -r requirements.txt
 
 ```
 $ cd issue_code_0407/
-$ cp websocket_app2.py ../PyGrid/app/websocket/
-$ mv ../PyGrid/app/websocket/app/__init__.py ../PyGrid/app/websocket/app/__init__backup.py
-$ cp __init__.py ../PyGrid/app/websocket/app/
+$ cp websocket_app2.py ../app/websocket/
+$ mv ../app/websocket/app/__init__.py ../app/websocket/app/__init__backup.py
+$ cp __init__.py ../app/websocket/app/
 ```
 
 ### Run the code 
@@ -28,9 +28,9 @@ $ python run_async_privategrid_client.py
 
 #### Method 2: run workers one by one (one command with one terminal window)
 ```
-$ python ../PyGrid/app/websocket/websocket_app2.py --host 0.0.0.0 --port 6666 --id alice --notebook mnist-parallel
-$ python ../PyGrid/app/websocket/websocket_app2.py --host 0.0.0.0 --port 6667 --id bob --notebook mnist-parallel
-$ python ../PyGrid/app/websocket/websocket_app2.py --host 0.0.0.0 --port 6668 --id charlie --notebook mnist-parallel
-$ python ../PyGrid/app/websocket/websocket_app2.py --host 0.0.0.0 --port 6669 --id testing --notebook mnist-parallel
+$ python ../app/websocket/websocket_app2.py --host 0.0.0.0 --port 6666 --id alice --notebook mnist-parallel
+$ python ../app/websocket/websocket_app2.py --host 0.0.0.0 --port 6667 --id bob --notebook mnist-parallel
+$ python ../app/websocket/websocket_app2.py --host 0.0.0.0 --port 6668 --id charlie --notebook mnist-parallel
+$ python ../app/websocket/websocket_app2.py --host 0.0.0.0 --port 6669 --id testing --notebook mnist-parallel
 $ python run_async_privategrid_client.py
 ```
