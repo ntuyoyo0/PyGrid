@@ -41,3 +41,9 @@ The obj with "0" key is the loss value returned by fit() in federated_client.py
 I found that it wouldn't run fit() in federated_client.py when i ran worker.async_fit()
 
 I don't know how to fix it :(
+
+## Snapshot
+### Error messages in the server side
+![image](https://github.com/ntuyoyo0/PyGrid/blob/yoyo0-dev/issue_code_0407/server.png)
+### Error messages in the client side
+![image](https://github.com/ntuyoyo0/PyGrid/blob/yoyo0-dev/issue_code_0407/client.png)
