@@ -20,7 +20,7 @@ mnist_trainset = datasets.MNIST(
 
 python = Path(sys.executable).name
 
-FILE_PATH = "./PyGrid/app/websocket/websocket_app2.py"
+FILE_PATH = "../app/websocket/websocket_app2.py"
 print("FILE_PATH:", FILE_PATH)
 call_alice = [
     python,
