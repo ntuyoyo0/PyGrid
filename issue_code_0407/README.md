@@ -34,6 +34,14 @@ $ python ../app/websocket/websocket_app2.py --host 0.0.0.0 --port 6668 --id char
 $ python ../app/websocket/websocket_app2.py --host 0.0.0.0 --port 6669 --id testing --notebook mnist-parallel
 $ python run_async_privategrid_client.py
 ```
+
+#### Method 3: sychronous fl (use fit() instead of async_fit())
+
+```
+$ python start_nodeClients.py
+$ python run_sync_privategrid_client.py
+```
+
 ## What I found
 It would be work if I using WebsocketClientWorker. Also, It works if I ran worker.fit() using NodeClient.
 Based on the error messages in the server side, you'll find that server cannot find the obj with "0" key.
